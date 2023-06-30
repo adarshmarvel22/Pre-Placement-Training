@@ -16,8 +16,8 @@ def findOriginalArray(changed):
     for i in range(n):
         if changed[i] * 2 in hashmap:
 
-            hashmap[changed[i] * 2] =-1
-            hashmap[changed[i]] =-1
+            hashmap[changed[i] * 2] -=1
+            hashmap[changed[i]] -=1
 
             original.append(changed[i])
 
